@@ -1,10 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoService | Taller mecánico</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+
+<header class="encabezado">
+    <h1>AutoService</h1>
+    <p>Tu vehículo en buenas manos</p>
+    <nav aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#precios">Precios</a>
+        <a href="#citas">Citas</a>
+    </nav>
+</header>
+
+<div class="contenedor">
+
+    <main class="contenido" id="inicio">
+        <section aria-labelledby="titulo-bienvenida">
+            <h2 id="titulo-bienvenida">Bienvenidos a AutoService</h2>
+            <p>
+                Ofrecemos mantenimiento preventivo y correctivo
+                para mantener tu vehículo en excelentes condiciones.
+            </p>
+        </section>
+
+        <section id="servicios" aria-labelledby="titulo-servicios">
+            <h2 id="titulo-servicios">Nuestros servicios</h2>
+            <ul>
+                <li>Cambio de aceite</li>
+                <li>Revisión del sistema de frenos</li>
+                <li>Diagnóstico computarizado</li>
+                <li>Mantenimiento general</li>
+            </ul>
+        </section>
+
+        <section id="precios" aria-labelledby="titulo-precios">
+            <h2 id="titulo-precios">Precios referenciales</h2>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <caption>Costos y tiempos estimados de mantenimiento</caption>
+                    <thead>
+                    <tr>
+                        <th scope="col">Servicio</th>
+                        <th scope="col">Tiempo</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Cambio de aceite</th>
+                        <td>30 min</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Revisión de frenos</th>
+                        <td>45 min</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Diagnóstico</th>
+                        <td>60 min</td>
+                        <td>$35</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <aside class="informacion" aria-labelledby="titulo-info">
+        <h2 id="titulo-info">Información importante</h2>
+        <p>Atendemos de lunes a viernes de 08:00 a 18:00.</p>
+        <p>Solicita una cita para recibir atención personalizada.</p>
+    </aside>
+
+    <section class="citas" id="citas" aria-labelledby="titulo-citas">
+        <h2 id="titulo-citas">Solicita una cita</h2>
+
+        <form action="#" method="get">
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre"
+                       autocomplete="name" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo"
+                       autocomplete="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="fecha">Fecha de preferencia</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <fieldset>
+                <legend>Tipo de vehículo</legend>
+
+                <label>
+                    <input type="radio" name="vehiculo"
+                           value="automovil" required>
+                    Automóvil
+                </label>
+
+                <label>
+                    <input type="radio" name="vehiculo"
+                           value="camioneta">
+                    Camioneta
+                </label>
+
+                <label>
+                    <input type="radio" name="vehiculo"
+                           value="motocicleta">
+                    Motocicleta
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Servicios adicionales (opcionales)</legend>
+
+                <label>
+                    <input type="checkbox" name="adicional"
+                           value="lavado">
+                    Lavado del vehículo
+                </label>
+
+                <label>
+                    <input type="checkbox" name="adicional"
+                           value="bateria">
+                    Revisión de batería
+                </label>
+
+                <label>
+                    <input type="checkbox" name="adicional"
+                           value="neumaticos">
+                    Revisión de neumáticos
+                </label>
+            </fieldset>
+
+            <button type="submit">Enviar solicitud</button>
+        </form>
+
+        <p>
+            Formulario demostrativo: todavía no se envían
+            solicitudes a un servidor.
+        </p>
+    </section>
+
+</div>
+
+<footer class="pie">
+    <p>AutoService — Taller mecánico</p>
+</footer>
 
 </body>
 </html>
