@@ -1,0 +1,2 @@
+N.º de lista 	Temática 	Campos especiales del formulario 	Breakpoint principal 	Restricción especial
+23 	Taller mecánico 	Grupo de radio y grupo de checkbox 	1024 px 	Layout principal con grid-template-areas que cambia de orden en móvil
