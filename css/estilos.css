@@ -138,6 +138,13 @@ thead {
     font: inherit;
 }
 
+.imagen-taller {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
 fieldset {
     min-width: 0;
     border: 1px solid var(--color-borde);
