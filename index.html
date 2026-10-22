@@ -19,9 +19,9 @@
     </nav>
 </header>
 
-<div class="contenedor">
+<main class="contenedor">
 
-    <main class="contenido" id="inicio">
+    <div class="contenido" id="inicio">
         <section aria-labelledby="titulo-bienvenida">
             <h2 id="titulo-bienvenida">Bienvenidos a AutoServicio</h2>
             <p>
@@ -30,6 +30,12 @@
             </p>
         </section>
 
+        <img
+                src="img/taller.jpeg"
+                alt="Imagen panoramica de nuestro taller en AutoServicio"
+                class="imagen-taller"
+        >
+
         <section id="servicios" aria-labelledby="titulo-servicios">
             <h2 id="titulo-servicios">Nuestros servicios</h2>
             <ul>
@@ -37,6 +43,14 @@
                 <li>Revisión de frenos</li>
                 <li>Diagnóstico realizado por computadora</li>
                 <li>Mantenimiento general</li>
+            </ul>
+            <h2 id="titulo-adicionales">Servicios adicionales</h2>
+            <ul>
+                <p>Tambien ofrecemos sevicios adicionales como:</p>
+                <li> Lavado del vehículo</li>
+                <li> Revisión de batería</li>
+                <li> Revisión de neumáticos</li>
+
             </ul>
         </section>
 
@@ -73,7 +87,7 @@
                 </table>
             </div>
         </section>
-    </main>
+    </div>
 
     <aside class="informacion" aria-labelledby="titulo-info">
         <h2 id="titulo-info">Horarios de atencion</h2>
@@ -95,6 +109,33 @@
                 <label for="correo">Correo electrónico</label>
                 <input type="email" id="correo" name="correo"
                        autocomplete="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="placa">Placa del vehículo</label>
+                <input
+                        type="text"
+                        id="placa"
+                        name="placa"
+                        pattern="[A-Za-z]{3}-?[0-9]{3,4}"
+                        title="Ingresa tres letras y tres o cuatro números, con guion opcional"
+                        placeholder="ABC-1234"
+                        maxlength="8"
+                        required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="kilometraje">Kilometraje del vehículo</label>
+                <input
+                        type="number"
+                        id="kilometraje"
+                        name="kilometraje"
+                        min="0"
+                        max="999999"
+                        step="100"
+                        required
+                >
             </div>
 
             <div class="campo">
@@ -149,13 +190,9 @@
             <button type="submit">Enviar solicitud</button>
         </form>
 
-        <p>
-            Formulario demostrativo: todavía no se envían
-            solicitudes a un servidor.
-        </p>
     </section>
 
-</div>
+</main>
 
 <footer class="pie">
     <p>AutoServicio — Taller mecánico</p>

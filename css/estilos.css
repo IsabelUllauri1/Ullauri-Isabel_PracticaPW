@@ -47,10 +47,9 @@ input:focus-visible {
     outline-offset: 3px;
 }
 
-/* Distribución principal en escritorio */
 .contenedor {
     display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    grid-template-columns: 2fr 1fr;
     grid-template-areas:
         "contenido informacion"
         "contenido citas";
@@ -89,7 +88,7 @@ section {
     margin-bottom: 24px;
 }
 
-/* Tabla */
+
 .tabla-contenedor {
     max-width: 100%;
     overflow-x: auto;
@@ -118,7 +117,6 @@ thead {
     color: var(--color-secundario);
 }
 
-/* Formulario */
 .campo {
     margin-bottom: 16px;
 }
