@@ -147,7 +147,7 @@ legend {
 
 fieldset label {
     display: block;
-    margin: 8px 0;
+    margin: 10px;
 }
 
 button {
@@ -158,13 +158,11 @@ button {
     padding: 12px 20px;
     font: inherit;
     font-weight: bold;
-    cursor: pointer;
 }
 
 button:hover {
     background-color: #304d70;
 }
-
 
 @media (max-width: 1024px) {
     .contenedor {
