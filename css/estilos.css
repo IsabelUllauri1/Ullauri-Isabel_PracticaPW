@@ -42,7 +42,10 @@ nav a {
 
 nav a:focus-visible,
 button:focus-visible,
-input:focus-visible {
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible
+{
     outline: 3px solid #e5a000;
     outline-offset: 3px;
 }
@@ -178,4 +181,5 @@ button:hover {
     .citas {
         padding: 16px;
     }
+
 }
