@@ -74,34 +74,28 @@ input:focus-visible {
 .contenido,
 .informacion,
 .citas {
-    min-width: 0;
     background-color: var(--color-secundario);
     padding: 24px;
-    border-radius: 8px;
+    border-radius: 8px; ///////////////////////////////////////////
 }
 
 h2 {
     color: var(--color-principal);
 }
 
-section {
-    margin-bottom: 24px;
-}
-
-
 .tabla-contenedor {
     max-width: 100%;
-    overflow-x: auto;
+    overflow-x: auto; /*permite desplazamiento horizontal si la tabla no cabe*/
 }
 
 table {
-    width: 100%;
+    width: 100%; /*la tabla ocupa to-do el ancho disponible */
     border-collapse: collapse;
 }
 
 caption {
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 10px;/*separacion de texto arriba de la tabla*/
     text-align: left;
 }
 
